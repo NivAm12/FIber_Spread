@@ -1,7 +1,7 @@
-const mongoose = require('mongoose');
+const {Schema, model} = require('mongoose');
 
 // create the fiber address schema:
-const fiberAddressSchema = new mongoose.Schema({
+const fiberAddressSchema = new Schema({
     streetName: {
         type: String
     },
@@ -13,4 +13,7 @@ const fiberAddressSchema = new mongoose.Schema({
     }
 });
 
-module.exports = mongoose.model('FiberAddress', fiberAddressSchema);
+// create the model:
+const FiberAddress = model('FiberAddress', fiberAddressSchema);
+
+exports.FiberAddress = FiberAddress;
