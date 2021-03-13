@@ -1,4 +1,5 @@
-const {Schema, model} = require('mongoose');
+import { Schema, model } from 'mongoose';
+import Joi from 'joi';
 
 // create the fiber address schema:
 const fiberAddressSchema = new Schema({
@@ -13,7 +14,18 @@ const fiberAddressSchema = new Schema({
     }
 });
 
-// create the model:
-const FiberAddress = model('FiberAddress', fiberAddressSchema);
+const FiberAddress = new model('FiberAddress', fiberAddressSchema);
 
-exports.FiberAddress = FiberAddress;
+const fiberAddressValidation = (fiberAdress) => {
+    // joi schema:
+    const schema = Joi.object({
+        streetName: Joi.string().required(),
+        cityName: Joi.string().required(),
+        houseNumber: Joi.number()
+    });
+
+    // validation:
+    return schema.validate();
+}
+
+export {FiberAddress, fiberAddressValidation};
