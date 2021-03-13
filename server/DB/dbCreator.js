@@ -1,6 +1,6 @@
-const {connect, connection} = require('mongoose');
-const fs = require('fs');
-const {FiberAddress} = require('../models/FiberAddress');
+import { connect, connection } from 'mongoose';
+import { readFileSync } from 'fs';
+import { FiberAddress } from '../models/FiberAddress';
 
 const connectToDB = () =>{
   connect('mongodb://localhost:27017/fiberSpread', {
@@ -21,7 +21,7 @@ const createDb = async() => {
     connectToDB();
     
     // load the json data:
-    const fiberData = JSON.parse((fs.readFileSync('fiber_data.json', 'UTF-8')));
+    const fiberData = JSON.parse((readFileSync('fiber_data.json', 'UTF-8')));
     
     await fiberData.forEach(
       async({street_name, house_number, city_name}) => {
