@@ -1,5 +1,7 @@
-import { Schema, connection, connect } from "mongoose";
-import { FiberAddress } from "../models/FiberAddress";
+import mongoose from "mongoose";
+import { FiberAddress } from "../models/FiberAddress.js";
+
+const { connection, connect } = mongoose;
 
 class FiberSpreadDbHandler {
   constructor() {
@@ -26,8 +28,9 @@ class FiberSpreadDbHandler {
 
   // db methods:
 
-  async getFiberAddressesByFilter(filter) {
+  async getFiberAddressesByFilter(filter = null) {
     try {
+      // find the addresses in the db:
       const fiberAddresses = await FiberAddress.find(filter);
 
       if (fiberAddresses == null) throw new Error("No addresses in the Db.");

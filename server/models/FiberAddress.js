@@ -1,5 +1,7 @@
-import { Schema, model } from 'mongoose';
+import mongoose from 'mongoose';
 import Joi from 'joi';
+
+const {Schema, model} = mongoose;
 
 // create the fiber address schema:
 const fiberAddressSchema = new Schema({
