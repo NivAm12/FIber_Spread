@@ -4,13 +4,14 @@ from selenium import webdriver
 import time
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.common.keys import Keys
+from selenium.common.exceptions import NoSuchElementException
+
 
 
 class FiberAddressScraper:
     def __init__(self, i_AddressToScrapeUrl, cityNameXpath, streetNameXpath,
-                houserNumberXpath, submitBtnXpath, successHeaderXpath=0):
+                houserNumberXpath, submitBtnXpath, successHeaderXpath):
                 # start the website session:
-                self.webDriver = None
                 self.startWebSession(i_AddressToScrapeUrl)
                 self.successHeaderElement = successHeaderXpath
 
@@ -32,17 +33,27 @@ class FiberAddressScraper:
         self.fillElement(self.houserNumberElement, houseNumber)
 
         # submit:
+        time.sleep(0.5)
+        self.submitBtnElement.click()
+
+        # check if the address search has succeed:
         time.sleep(1)
-        self.webDriver.find_element_by_xpath(self.submitBtnElement).click()
+        return self.checkIfSearchSucceed()
 
 
-    def fillElement(elementToFill, keys):
+    def fillElement(self, elementToFill, keys):
         elementToFill.send_keys(keys)
         elementToFill.send_keys(Keys.TAB)
         time.sleep(0.5)
-        
-        
 
+    def checkIfSearchSucceed(self):
+        try:
+            successHeader = self.webDriver.find_element_by_xpath(self.successHeaderElement)
+            print(successHeader.text)
+        except NoSuchElementException:
+            return False
+        return True
+        
 # get control of the browser
 # unlimitedWeb = webdriver.Chrome()
 unlimitedRrl = 'https://www.partner.co.il/globalassets/global/fiberinternet/index.html'
@@ -51,8 +62,8 @@ unlimitedRrl = 'https://www.partner.co.il/globalassets/global/fiberinternet/inde
 time.sleep(2)
 
 # get the form input fields
-cityName = 'תל אביב - יפו'
-streetName = 'אבן גבירול'
+cityName = 'בת ים'
+streetName = 'פרנק אנה'
 houseNumber = 4
 
 cityNameXpath = '//*[@id="AfibersLeadCity"]'
@@ -64,8 +75,9 @@ streetNameXpath = '//*[@id="installationStree"]'
 houserNumberXpath = '//*[@id="houseNum"]'
 # houserNumberFormInput = unlimitedWeb.find_element_by_xpath(houserNumberXpath)
 
-testObj = FiberAddressScraper(unlimitedRrl,cityNameXpath, streetNameXpath, houserNumberXpath, '//*[@id="sendBtn"]')
-testObj.checkIfAddressHasFibers(cityName, streetName, houseNumber)
+successHeaderXpath = '//*[@id="AfibersSectionLead"]/div[2]/div/div[1]/h3'
+testObj = FiberAddressScraper(unlimitedRrl,cityNameXpath, streetNameXpath, houserNumberXpath, '//*[@id="sendBtn"]', successHeaderXpath)
+print(testObj.checkIfAddressHasFibers(cityName, streetName, houseNumber))
 # submit
 # unlimitedWeb.find_element_by_xpath('//*[@id="sendBtn"]').click()
 
