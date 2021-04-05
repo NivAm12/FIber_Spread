@@ -1,1 +1,0 @@
-[<div class="ginput_container ginput_container_phone"><input aria-invalid="false" aria-required="true" class="medium" data-error="טלפון נייד - שדה חובה" id="input_2_2" name="input_2" placeholder="טלפון נייד" type="tel" value=""/></div>]
