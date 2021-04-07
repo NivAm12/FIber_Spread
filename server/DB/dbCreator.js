@@ -1,6 +1,6 @@
 import { connect, connection } from 'mongoose';
 import { readFileSync } from 'fs';
-import { FiberAddress } from '../models/FiberAddress';
+import { Address } from '../models/Address'
 
 const connectToDB = () =>{
   connect('mongodb://localhost:27017/fiberSpread', {
@@ -21,18 +21,19 @@ const createDb = async() => {
     connectToDB();
     
     // load the json data:
-    const fiberData = JSON.parse((readFileSync('fiber_data.json', 'UTF-8')));
+    const data = JSON.parse((readFileSync('israelStreets.json', 'UTF-8')));
     
-    await fiberData.forEach(
-      async({street_name, house_number, city_name}) => {
+    await data.forEach(
+      async({cityCode, cityName, streetCode, streetName}) => {
         // create the object for the db:
-          const fiberAddressObj = new FiberAddress({
-            streetName: street_name,
-            cityName: city_name,
-            houseNumber: house_number});
+          const addressObj = new Address({
+            streetName: streetName,
+            cityName: cityName,
+            houseNumber: Math.floor(Math.random() * 10)
+          });
 
         // insert the data to the db:
-        await fiberAddressObj.save();
+        await addressObj.save();
       }
     )
 }
