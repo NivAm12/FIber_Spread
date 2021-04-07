@@ -76,8 +76,12 @@ class FiberAddressScraper:
 
 unlimitedRrl = 'https://www.unlimited.net.il/%D7%A4%D7%A8%D7%99%D7%A1%D7%AA-%D7%A1%D7%99%D7%91%D7%99%D7%9D-%D7%90%D7%95%D7%A4%D7%98%D7%99%D7%99%D7%9D/'
 
+with open('server/DB/israelStreets.json', encoding="utf8") as f:
+  data = json.load(f)  
+
+#print(data[0]['city_name'])
 # get the form input fields
-cityName = 'בת ים'
+cityName = data[0]['city_name']
 streetName = 'הרב מימון'
 houseNumber = 4
 
