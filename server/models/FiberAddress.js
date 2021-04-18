@@ -13,6 +13,9 @@ const fiberAddressSchema = new Schema({
     },
     houseNumber: {
         type: Number
+    },
+    companies: {
+        type: Array, "default": []
     }
 });
 
