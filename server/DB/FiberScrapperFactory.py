@@ -8,21 +8,21 @@ class FiberScrapperOptions(enum.Enum):
 
 
 def scrapperFactory(scrapper: FiberScrapperOptions):
-    scrapper = None
-
+    scrapperResult = None
+    
     if scrapper == FiberScrapperOptions.unlimited:
-        scrapper = FiberAddressScraper(unlimitedUrl, unlimitedCityNameXpath, unlimitedStreetNameXpath, unlimitedHouserNumberXpath,
+        scrapperResult = FiberAddressScraper(unlimitedUrl, unlimitedCityNameXpath, unlimitedStreetNameXpath, unlimitedHouserNumberXpath,
                                         unlimitedSubmitBtnXpath, unlimitedSuccessHeaderXpath, unlimitedSuccessHeader)
     elif scrapper == FiberScrapperOptions.parnter:
-        scrapper = FiberAddressScraper(parnterUrl, parnterCityNameXpath, parnterStreetNameXpath, parnterHouserNumberXpath,
-                                        parnterSubmitBtnXpath, parnterSuccessHeaderXpath, parnterSuccessHeader)
+        scrapperResult = FiberAddressScraper(partnerUrl, partnerCityNameXpath, partnerStreetNameXpath, partnerHouserNumberXpath,
+                                        partnerSubmitBtnXpath, partnerSuccessHeaderXpath, partnerSuccessHeader)
     elif scrapper == FiberScrapperOptions.cellcom:
-        scrapper = FiberAddressScraper(cellcomUrl, cellcomCityNameXpath, cellcomStreetNameXpath, cellcomHouserNumberXpath,
+        scrapperResult = FiberAddressScraper(cellcomUrl, cellcomCityNameXpath, cellcomStreetNameXpath, cellcomHouserNumberXpath,
                                         cellcomSubmitBtnXpath, cellcomSuccessHeaderXpath, cellcomSuccessHeader)
     else:
         raise Exception('No scrapper in this kind..')                                                  
 
-    return scrapper    
+    return scrapperResult    
 
 
 

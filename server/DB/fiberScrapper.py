@@ -78,18 +78,6 @@ class FiberAddressScraper:
         self.webDriver.quit()    
 
 
-# tests:
-####### pages scrape info
-
-
-
-city = 'בת ים'
-street = 'הרב מימון'
-houserNumber = 50
-testObj = FiberAddressScraper(unlimitedUrl, unlimitedCityNameXpath, unlimitedStreetNameXpath, unlimitedHouserNumberXpath,
-                              unlimitedSubmitBtnXpath, unlimitedSuccessHeaderXpath, unlimitedSuccessHeader)
-print(testObj.checkIfAddressHasFibers(city, street, houserNumber))
-
 
 
 
