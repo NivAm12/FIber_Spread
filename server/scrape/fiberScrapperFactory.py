@@ -13,6 +13,7 @@ def scrapperFactory(scrapper: FiberScrapperOptions):
     if scrapper == FiberScrapperOptions.unlimited:
         scrapperResult = FiberAddressScraper(unlimitedUrl, unlimitedCityNameXpath, unlimitedStreetNameXpath, unlimitedHouserNumberXpath,
                                         unlimitedSubmitBtnXpath, unlimitedSuccessHeaderXpath, unlimitedSuccessHeader)
+                                        
     elif scrapper == FiberScrapperOptions.parnter:
         scrapperResult = FiberAddressScraper(partnerUrl, partnerCityNameXpath, partnerStreetNameXpath, partnerHouserNumberXpath,
                                         partnerSubmitBtnXpath, partnerSuccessHeaderXpath, partnerSuccessHeader)

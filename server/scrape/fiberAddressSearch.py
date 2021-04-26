@@ -6,7 +6,7 @@ from joblib import Parallel, delayed
 unlimitedScrapper = scrapperFactory(FiberScrapperOptions.unlimited)
 partnerScrapper = scrapperFactory(FiberScrapperOptions.parnter)
 cellcomScrapper = scrapperFactory(FiberScrapperOptions.cellcom)
-scrappers = [unlimitedScrapper, partnerScrapper, cellcomScrapper]
+scrappers = [{'obj': partnerScrapper, 'name': 'partner'}, {'obj': unlimitedScrapper, 'name': 'unlimited'}, {'obj': cellcomScrapper, 'name': 'cellcom'}]
 
 
 def searchForFibers(cityName, streetName, houseNumber, scrappers):
@@ -18,13 +18,15 @@ def searchForFibers(cityName, streetName, houseNumber, scrappers):
 
 
 def searchForFiberProccess(scrapper, cityName, streetName, houseNumber):
-    print("im inside sfseffdfsd")
-    return scrapper.checkIfAddressHasFibers(cityName, streetName, houseNumber)
+    
+    return {scrapper['name']: scrapper['obj'].checkIfAddressHasFibers(cityName, streetName, houseNumber)}
+    
+        
 
 
 city = 'בת ים'
 street = 'הרב מימון'
-houserNumber = 4
+houserNumber = 21
 print(searchForFibers(city, street, houserNumber, scrappers))
         
     
