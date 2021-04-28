@@ -10,10 +10,10 @@ scrappers = [{'obj': partnerScrapper, 'name': 'partner'}, {'obj': unlimitedScrap
 
 
 def searchForFibers(cityName, streetName, houseNumber, scrappers):
-    results = Parallel(n_jobs=-1)(delayed(searchForFiberProccess)
-                        (scrapper=scrapper, cityName=cityName, streetName=streetName, houseNumber=houseNumber)
-                            for scrapper in scrappers)
-                            
+    # results = Parallel(n_jobs=-1)(delayed(searchForFiberProccess)
+    #                     (scrapper=scrapper, cityName=cityName, streetName=streetName, houseNumber=houseNumber)
+    #                         for scrapper in scrappers)
+    results =  partnerScrapper.checkIfAddressHasFibers(cityName, streetName, houseNumber)                 
     return results
 
 
@@ -26,7 +26,7 @@ def searchForFiberProccess(scrapper, cityName, streetName, houseNumber):
 
 city = 'בת ים'
 street = 'הרב מימון'
-houserNumber = 21
+houserNumber = 4
 print(searchForFibers(city, street, houserNumber, scrappers))
         
     

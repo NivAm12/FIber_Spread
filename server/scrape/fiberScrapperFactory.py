@@ -52,6 +52,6 @@ partnerCityNameXpath = '//*[@id="AfibersLeadCity"]'
 partnerStreetNameXpath = '//*[@id="installationStree"]'
 partnerHouserNumberXpath = '//*[@id="houseNum"]'
 partnerSubmitBtnXpath = '//*[@id="sendBtn"]'
-partnerSuccessHeaderXpath = '//*[@id="AfibersSectionLead"]/div[2]/div/div[1]/h3'
-partnerSuccessHeader = "הכל מוכן והבניין שלך מחובר"
+partnerSuccessHeaderXpath = '//*[@id="AfibersSectionLead"]/div[2]/div/div[1]/h3/span'
+partnerSuccessHeader = "כבר הגענו אליך"
 
