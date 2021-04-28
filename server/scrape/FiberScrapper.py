@@ -6,9 +6,8 @@ from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
+from selenium.webdriver.firefox.options import Options
 
-# TODO: fix the success search
-# TODO: build algorithem 
 
 class FiberAddressScraper:
     def __init__(self, addressToScrapeUrl, cityNameXpath, streetNameXpath,
@@ -63,7 +62,7 @@ class FiberAddressScraper:
             EC.presence_of_element_located((By.XPATH, self.successHeaderXpath)))
     
         header = self.webDriver.find_element_by_xpath(self.successHeaderXpath).text
-        
+        #self.webDriver.get_screenshot_as_file('pp.png')
         if self.successHeader in header:
             success = True
             
@@ -72,19 +71,16 @@ class FiberAddressScraper:
 
     def __startWebSession(self):
         # set the web driver:
-        op = webdriver.ChromeOptions()
-        op.add_argument("--window-size=1920,1080")
-        op.headless = True
-        op.add_argument('--disable-gpu')
-        op.add_argument('user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36')
-        op.add_experimental_option('excludeSwitches', ['enable-logging']) 
-        self.webDriver = webdriver.Chrome(options=op)     
+        op = Options()
+        #op.headless = True
+
+        self.webDriver = webdriver.Firefox(executable_path='C:\Program Files\Mozilla Firefox\geckodriver.exe', options=op)     
         self.webDriver.get(self.addressToScrape)
-        
+
         # wait for page to load:
         WebDriverWait(self.webDriver, 10).until(
             EC.presence_of_element_located((By.XPATH, self.cityNameXpath)))
-            
+        #self.webDriver.get_screenshot_as_file('tt.png')
 
     def __quitSession(self):
         self.webDriver.quit() 
