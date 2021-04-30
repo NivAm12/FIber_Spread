@@ -49,10 +49,12 @@ class FiberAddressScraper:
             
 
     def __fillElement(self, elementToFillXpath, searchQuery):
-        self.webDriver.find_element_by_xpath(elementToFillXpath).send_keys(searchQuery)
-        self.webDriver.find_element_by_xpath(elementToFillXpath).send_keys(Keys.RETURN)
-        self.webDriver.find_element_by_xpath(elementToFillXpath).send_keys(Keys.TAB)
-        time.sleep(1.3)
+        element = self.webDriver.find_element_by_xpath(elementToFillXpath)
+        time.sleep(0.5)
+        element.send_keys(searchQuery)
+        element.send_keys(Keys.RETURN)
+        element.send_keys(Keys.TAB)
+        time.sleep(1.5)
 
 
     def __checkIfSearchSucceed(self):
@@ -61,8 +63,8 @@ class FiberAddressScraper:
         WebDriverWait(self.webDriver, 10).until(
             EC.presence_of_element_located((By.XPATH, self.successHeaderXpath)))
     
-        header = self.webDriver.find_element_by_xpath(self.successHeaderXpath).text
-        #self.webDriver.get_screenshot_as_file('pp.png')
+        header = self.webDriver.find_element_by_xpath(self.successHeaderXpath).get_attribute("innerHTML")
+        
         if self.successHeader in header:
             success = True
             
@@ -72,7 +74,7 @@ class FiberAddressScraper:
     def __startWebSession(self):
         # set the web driver:
         op = Options()
-        #op.headless = True
+        op.headless = True
 
         self.webDriver = webdriver.Firefox(executable_path='C:\Program Files\Mozilla Firefox\geckodriver.exe', options=op)     
         self.webDriver.get(self.addressToScrape)
@@ -80,7 +82,7 @@ class FiberAddressScraper:
         # wait for page to load:
         WebDriverWait(self.webDriver, 10).until(
             EC.presence_of_element_located((By.XPATH, self.cityNameXpath)))
-        #self.webDriver.get_screenshot_as_file('tt.png')
+        
 
     def __quitSession(self):
         self.webDriver.quit() 

@@ -47,11 +47,12 @@ cellcomSuccessHeaderXpath = '/html/body/div[2]/div[1]/div/div/div/div[3]/div[1]/
 cellcomSuccessHeader = "מעולה, יש לכם תשתית סיבים מוכנה בבניין"
 
 # partner
-partnerUrl = 'https://www.partner.co.il/globalassets/global/fiberinternet/index.html'
+partnerUrl = 'https://www.partner.co.il/globalassets/global/privatefiber/index.html'
 partnerCityNameXpath = '//*[@id="AfibersLeadCity"]'
 partnerStreetNameXpath = '//*[@id="installationStree"]'
 partnerHouserNumberXpath = '//*[@id="houseNum"]'
 partnerSubmitBtnXpath = '//*[@id="sendBtn"]'
-partnerSuccessHeaderXpath = '//*[@id="AfibersSectionLead"]/div[2]/div/div[1]/h3/span'
-partnerSuccessHeader = "כבר הגענו אליך"
+partnerSuccessHeaderXpath = '//*[@id="AfibersSectionLead"]/div[2]/div/div[1]/h3'
+partnerSuccessHeader = 'יש! כבר הגענו לבניין שלך'
+
 
