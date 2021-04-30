@@ -33,8 +33,9 @@ class FiberAddressScraper:
 
             # submit:
             if self.webDriver.find_elements_by_xpath(self.submitBtnElementXpath):
-                self.webDriver.find_element_by_xpath(self.submitBtnElementXpath).click()
- 
+                button = self.webDriver.find_element_by_xpath(self.submitBtnElementXpath)
+                button.click()
+                    
             # check if the address search has succeed:
             success =  self.__checkIfSearchSucceed()
 
@@ -43,7 +44,7 @@ class FiberAddressScraper:
             print(e)
 
         finally:
-            self.__quitSession()
+            #self.__quitSession()
             return success    
             
             
@@ -61,7 +62,7 @@ class FiberAddressScraper:
         success = False
         
         WebDriverWait(self.webDriver, 10).until(
-            EC.presence_of_element_located((By.XPATH, self.successHeaderXpath)))
+            EC.visibility_of_element_located((By.XPATH, self.successHeaderXpath)))
     
         header = self.webDriver.find_element_by_xpath(self.successHeaderXpath).get_attribute("innerHTML")
         

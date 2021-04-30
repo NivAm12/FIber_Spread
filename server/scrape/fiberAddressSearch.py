@@ -24,9 +24,9 @@ def searchForFiberProccess(scrapper, cityName, streetName, houseNumber):
         
 
 
-city = 'בת ים'
-street = 'הרב מימון'
-houserNumber = 4
+city = 'ירושלים'
+street = 'אלבק חנוך'
+houserNumber = 16
 print(searchForFibers(city, street, houserNumber, scrappers))
         
     

@@ -52,7 +52,7 @@ partnerCityNameXpath = '//*[@id="AfibersLeadCity"]'
 partnerStreetNameXpath = '//*[@id="installationStree"]'
 partnerHouserNumberXpath = '//*[@id="houseNum"]'
 partnerSubmitBtnXpath = '//*[@id="sendBtn"]'
-partnerSuccessHeaderXpath = '//*[@id="AfibersSectionLead"]/div[2]/div/div[1]/h3'
+partnerSuccessHeaderXpath = '//*[@id="AfibersSectionLead"]/div[2]/div/div[1]/h3/span'
 partnerSuccessHeader = 'יש! כבר הגענו לבניין שלך'
 
 
