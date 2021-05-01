@@ -771,17 +771,28 @@ leteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
 console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
 1619798007308	Marionette	INFO	Listening on port 14944
 1619798007543	Marionette	WARN	TLS certificate errors will be ignored for this session
-JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
-JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
-Script warning: https://www.unlimited.net.il/wp-content/themes/unlimited/map/resources/ol.js, line 7: Failed to create WebGL context: WebGL creation failed: 
-* Can't use WebGL in headless mode (https://bugzil.la/1375585).
-JavaScript error: https://www.unlimited.net.il/wp-content/themes/unlimited/assets/dist/js/bundle.js?ver=20210404, line 7: TypeError: this.$.attr(...) is undefined
-1619798241873	geckodriver	INFO	Listening on 127.0.0.1:15411
-1619798244922	mozrunner::runner	INFO	Running command: "C:\\P1619798244984	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Us*** You are running in headless mode.
-1619798246097	Marionette	INFO	Marionette enabled
-console.warn: SearchSettings: "get: No settings file exists,console.warn: SearchSettings: "get: No settings file1619798251025	Marionette	INFO	Listening on port 15431
-161971619798251243	Marionette	INFO	Listening on port 15439
-1619798251651	Marionette	WAJavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
-JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
-JavaScript error: https://www.partner.co.il/Master.Site/modules/CUSTOM_ELEMENTS/zone.js, line 502: uncaught exception: [object Object]
-JavaScript error: https://www.partner.co.il/globalassets/global/privatefiber/index.html line 2897 > injectedScript, line 1: ReferenceError: obApi isJavaScript error: https://www.unlimited.net.il/wp-content/themes/unlimited/assets/dist/js/bundle.js?ver=20210404, line 7: TypeError: this.$.attr(...) is undefined
+JavaScript error: , line 0: uncaught exception: Timeout
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x3A0144,name=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+A content process crashed and MOZ_CRASHREPORTER_
+###!!! [Parent][MessageChannel] Error: (msgtype=0x3A0144,name=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+[Parent 11352, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+1619856030257	Marionette	INFO	Stopped listening on port 14943
+cript error: , line 0: NotFoundError: Could not move source file(C:\Users\Niv Amos\AppData\Local\Temp\rust_mozprofileWG907O\bookmarkbackups\bookmarks-2021-04-30_11_bVOIZrtr-Mny4feN-IaayQ==.jsonlz4) because it does not exist
+JavaScript error: , line 0: NotFoundError: Could not move source file(C:\Users\Niv Amos\AppData\Local\Temp\rust_mozprofileWG907O\bookmarkbackups\bookmarks-2021-04-30_11_bVOIZrtr-Mny4feN-IaayQ==.jsonlz4) because it does not exist
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+[Parent 14252, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+1619855923518	Marionette	INFO	Stopped listening on port 14947
+\AppData\Local\Temp\rust_mozprofiletbtgNC\bookmarkbackups\bookmarks-2021-04-30_11_jPU2Crime1ZLXQGTrH2r5g==.jsonlz4) because it does not exist
+JavaScript error: , line 0: uncaught exception: Timeout
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+[Parent 11300, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+1619855971676	Marionette	INFO	Stopped listening on port 15435
+e 0: NotFoundError: Could not move source file(C:\Users\Niv Amos\AppData\Local\Temp\rust_mozprofileE9byj1\bookmarkbackups\bookmJavaScript error: , line 0: NotFoundError: Could not move source file(C:\Users\NA content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+[Parent 6768, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+1619856022236	Marionette	INFO	Stopped listening on port 15431
+NG: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+1619856007194	Marionette	INFO	Stopped listening on port 15439

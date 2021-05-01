@@ -1,0 +1,159 @@
+1619883829961	geckodriver	INFO	Listening on 127.0.0.1:1169
+1619883833032	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\NIVAMO~1\\AppData\\Local\\Temp\\rust_mozprofileFQzLHT"
+*** You are running in headless mode.
+1619883834293	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619883838190	Marionette	INFO	Listening on port 1191
+1619883838627	Marionette	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+omplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+[Parent 4892, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+1619884165845	Marionette	INFO	Stopped listening on port 1191
+net.il/wp-content/themes/unlimited/assets/dist/js/bundle.js?ver=20210404, line 7: TypeError: this.$.attr(...) is undefined
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+[Parent 4052, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+1619884160345	Marionette	INFO	Stopped listening on port 1190
+-no-remote" "-profile" "C:\\Use*** You are running in headless mode.
+1619883963064	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619883967396	Marionette	INFO	Listening on port 1561
+1619883967748	Marionette	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+.unlimited.net.il/wp-contentJavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+mes/unlimited/map/resources/ol.js, line 7: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript error: https://www.unlimited.net.il/wp-content/themes/unlimited/assets/dist/js/bundle.js?ver=20210404, line 7: TypeError: this.$.attr(...) is undefined
+Exiting due to channel error.
+Exiting due to channel error.
+1619884213197	geckodriver	INFO	Listening on 127.0.0.1:1991
+1619884216350	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\NIVAMO~1\\AppData\\Local\\Temp\\rust_mozprofilecfWVFt"
+*** You are running in headless mode.
+1619884217218	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619884220223	Marionette	INFO	Listening on port 2015
+1619884220584	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: chrome://marionette/content/driver.js, line 292: TypeError: this.currentSession is null
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+sion is null
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+JavaScript error: chrome://marionette/content/driver.js, line 292: TypeError: this.currentSession is null
+JavaScript error: chrome://marionette/content/driver.js, line 292: TypeError: this.currentSession is null
+JavaScript error: chrome://marionette/content/driver.js, line 292: TypeError: this.currentSession is null
+JavaScript error: chrome://marionette/content/driver.js, line 292: TypeError: this.currentSession is null
+JavaScript error: chrome://marionette/content/driver.js, line 292: TypeError: this.currentSession is null
+JavaScript error: chrome://marionette/content/driver.js, line 292: TypeError: this.currentSession is null
+JavaScript error: chrome://marionette/content/driver.js, line 292: TypeError: this.currentSession is null
+JavaScript error: chrome://marionette/content/driver.js, line 292: TypeError: this.currentSession is null
+JavaScript error: chrome://marionette/content/driver.js, line 292: TypeError: this.currentSession is null
+JavaScript error: chrome://marionette/content/driver.js, line 292: TypeError: this.currentSession is null
+JavaScript error: chrome://marionette/content/driver.js, line 292: TypeError: this.currentSession is null
+JavaScript error: chrome://marionette/content/driver.js, line 292: TypeError: this.currentSession is null
+JavaScript error: chrome://marionette/content/driver.js, line 292: TypeError: this.currentSession is null
+[Parent 6268, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+1619884312210	Marionette	INFO	Stopped listening on port 2015
+1619884397104	geckodriver	INFO	Listening on 127.0.0.1:2370
+1619884400180	mozrunner::runner	INFO	Running command: "C:\\1619884400229	mozrunner::runner	INFO	Running command: "C:\\1619884400261	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette"*** You are running in headless mode.
+1619884401008	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file existsconsole.warn: SearchSettings: "get: No settings file 1619884404097	Marionette	INFO	Listening on port 2390
+1619884404451	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JaExiting due to channel error.
+actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+Exiting due to channel error.
+Exiting due to channel error.
+ap/resources/ol.js, line 7: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.unlimited.net.il/wp-content/themes/unlimited/map/resources/ol.js, line 7: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript error: https://www.unlimited.net.il/wp-content/themes/unlimited/assets/dist/js/bundle.js?ver=20210404, line 7: TypeError: this.$.attr(...) is undefined
+Exiting due to channel error.
+Listening on 127.0.0.1:2827
+1619884854728	mozrunner::runner	INFO	Running command: "C:\\1619884854822	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Use*** You are running in headless mode.
+1619884855888	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file existsconsole.warn: SearchSettings: "get: No settings file 1619884860985	Marionette	INFO	Listening on port 2849
+161981619884861453	Marionette	INFO	Listening on port 2854
+1619884861716	Marionette	WARJavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://www.partner.co.il/Master.Site/moduleJavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+fiber/index.html JavaScript error: https://www.unlimited.net.il/wp-content/themes/unlimitedJavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+Exiting due to channel error.
+fined
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+Exiting due to channel error.
+:runner	INFO	Running command: "C:\\1619885476517	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\NIVAMO~1\\AppData\\Local\\Temp\\rus1619885477752	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file existsconsole.warn: SearchSettings: "get: No settings file 1619885488334	Marionette	INFO	Listening on port 3308
+1619885488395	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://www.partner.co.il/Master.Site/modules/CUSTOM_ELEMENTS/zone.js, line 502: uncaught exception: [object Object]
+JavaScript error: https://www.partner.co.il/globalassets/global/privatefiber/index.html [Child 21888, MediaDecoderStateMachine #1] WARNING: Decoder=1f0c33f3c00 Decode error: NS_ERROR_DOM_MEDIA_DECODE_ERR (0x806e0004) - RefPtr<MediaDataDecoder::DecodePromise> __cdecl mozilla::WMFMediaDataDecoder::ProcessError(HRESULT, const char *): MFTManager::Output(2):80004005: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp:3478
+arionette" "-headless" "-foreground" "-no-remote"1619885697050	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file existsconsole.warn: SearchSettings: "get: No settings file console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+1619885720918	MarionetteJavaScript error: https://www.unlimited.net.il/wp-content/themes/unlimited/assets/dist/js/bundle.js?ver=20210404, line 7: ReferenceError: ga is not defined
+JavaScript warning: https://www.unlimited.net.il/wp-content/themes/unlimited/map/resources/ol.js, line 7: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.unlimited.net.il/wp-content/themes/unlimited/map/resources/ol.js, line 7: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript error: https://www.unlimited.net.il/wp-content/themes/unlimited/assets/dist/js/bundle.js?ver=20210404, line 7: TypeError: this.$.attr(...) is undefined
+[Child 11436, MediaDecoderStateMachine #1] WARNING: Decoder=29b37331400 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005): file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp:3478
+irefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Use*** You are running in headless mode.
+1619885901607	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file existsconsole.warn: SearchSettings: "get: No settings file 1619885919770	Marionette	INFO	Listening on port 4084
+161981619885928937	Marionette	INFO	Listening on port 4092
+1619885929306	Marionette	WARA content process crashed and MOZ_CRASHREPORTER_SHUTDOWN isJavaScript error: chrome://marionette/content/driver.js, line 292: TypeError: this.currentSession is null
+ailed to create WebGL context: WebGL creaconsole.error: (new Error("SessionFile is closed", "resource:///modules/sessionstore/SessionFile.jsm", 433))
+JavaScript error: resource://gre/modules/CrashManager.jsm, line 833: NotAllowedError: Shutting down and refusing additional I/O tasks
+1619885959575	Marionette	INFO	Stopped listening on port 4084
+
+Exiting due to channel error.
+Exiting due to channel error.
+1619886177139	geckodriver	INFO	Listening on 127.0.0.1:1671
+1619886180183	mozrunner::runner	INFO	Running command: "C:\\1619886180241	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Use*** You are running in headless mode.
+1619886183206	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file existsconsole.warn: SearchSettings: "get: No settings file 1619886188125	Marionette	INFO	Listening on port 1692
+161981619886189434	Marionette	INFO	Listening on port 1698
+1619886189803	Marionette	WARJavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://www.partner.co.il/Master.Site/modules/CUSTOM_ELEMENTS/zone.js, line 502: uncaught exception: [object Object]
+JavaScript error: https://www.partner.co.il/globalassets/global/privatefiber/index.html line 2897 > injectedScript, line 1: ReferenceError: obApi iJavaScript error: https://www.unlimited.net.il/wp-content/themes/unlimited/assets/dist/js/bundle.js?ver=20210404, line 7: TypeError: this.$.attr(...) is undefined
+1619886324891	geckodriver	INFO	Listening on 127.0.0.1:2050
+1619886327929	mozrunner::runner	INFO	Running command: "C:\\1619886328007	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Use*** You are running in headless mode.
+1619886329085	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619886334517	Marionette	INFO	Listening on port 2076
+1619886334840	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.j1619886360393	Marionette	INFO	Stopped listening on port 2080
+WARNING: At least one completion condition is taking too long to complete. Conditions: [{"name":"ContentParent: id=18062b54800","state":{"remoteTypePrefix":"web"},"filename":"/builds/worker/checkouts/gecko/dom/ipc/ContentParent.cpp","lineNumber":3540,"stack":["resource://gre/modules/nsAsyncShutdown.jsm:addBlocker:162","chrome://globaJavaScript error: https://www.unlimited.net.il/wp-content/themes/unlimited/assets/dist/js/bundle.js?ver=20210404, line 7: TypeError: this.$.attr(...) is undefined
+1619886375843	Marionette	INFO	Stopped listening on port 2072
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x230032,name=PBrowser::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+js:onDOMContentLoaded:1761"]}] Barrier: profile-before-change
+console.error: (new Error("SessionFile is closed", "resource:///modules/sessionstore/SessionFile.jsm", 433))
+1619886458066	geckodriver	INFO	Listening on 127.0.0.1:2540
+1619886461108	mozrunner::runner	INFO	Running command: "C:\\1619886461138	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Use*** You are running in headless mode.
+1619886462951	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619886470858	Marionette	INFO	Listening on port 2559
+1619886471190	Marionette	WARN	TLS certificate errors will be ignored for this session
+1619886499556	Marionette	INFO	Stopped listening on port 2559
+JavaScript error: resource:///modules/sessionstore/SessionStore.jsm, line 5073: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]
+rtner.co.il/Master.Site/modules/CUSTOM_ELEMENTS/zone.js, line 502: uncaught exception: [object Object]
+JavaScript error: https://www.partner.co.il/globalassets/global/privatefiber/index.html line 2897 > injectedScript, line 1: ReferenceError: obApi i1619886520290	Marionette	INFO	Stopped listening on port 2567
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+

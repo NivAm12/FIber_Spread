@@ -41,10 +41,9 @@ class FiberAddressScraper:
 
         except Exception as e:
             success = False
-            print(e)
 
         finally:
-            #self.__quitSession()
+            self.__quitSession()
             return success    
             
             
