@@ -78,7 +78,7 @@ class FiberAddressScraper:
 
         self.webDriver = webdriver.Firefox(executable_path='C:\Program Files\Mozilla Firefox\geckodriver.exe', options=op)     
         self.webDriver.get(self.addressToScrape)
-
+        
         # wait for page to load:
         WebDriverWait(self.webDriver, 10).until(
             EC.presence_of_element_located((By.XPATH, self.cityNameXpath)))
