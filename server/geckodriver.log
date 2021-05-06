@@ -217,3 +217,20 @@ JavaScript error: https://cellcom.co.il/Spa/Scripts/app_c7833f.chunk.js, line 1:
 
 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
+1620322573740	geckodriver	INFO	Listening on 127.0.0.1:2788
+1620322576801	mozrunner::runner	INFO	Running command: "C:\\1620322576810	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Use*** You are running in headless mode.
+1620322577894	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file existsconsole.warn: SearchSettings: "get: No settings file 1620322582230	Marionette	INFO	Listening on port 2811
+1620322582736	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.j1620322601113	Marionette	INFO	Stopped listening on port 2814
+[Child 21476, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:544
+er.co.il/Master.Site/modules/CUSTOM_ELEMENTS/zone.js, line 502: uncaught exception: [object Object]
+JavaScript error: https://www.partner.co.il/globalassets/global/privatefiber/index.html JavaScript error: https://www.unlimited.net.il/wp-content/themes/unlimited1620322609988	Marionette	INFO	Stopped listening on port 2810
+s.$.attr(...) is undefined
+1620322609563	Marionette	INFO	Stopped listening on port 2811
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x230032,name=PBrowser::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+

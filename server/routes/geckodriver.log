@@ -1,0 +1,27 @@
+1620320183204	geckodriver	INFO	Listening on 127.0.0.1:2098
+1620320186264	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\NIVAMO~1\\AppData\\Local\\Temp\\rust_mozprofiled5Lmvl"
+*** You are running in headless mode.
+1620320187892	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1620320193817	Marionette	INFO	Listening on port 2119
+1620320194144	Marionette	WARN	TLS certificate errors will be ignored for this session
+1620320214452	Marionette	INFO	Stopped listening on port 2122
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3A0141,name=PContent::Msg_ScriptError) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [ChildJavaScript error: https://www.partner.co.il/Master.Site/modules/CUSTOM_ELEMENTS/zone.js, line 502: uncaught exception: [object Object]
+JavaScript error: https://www.partner.co.il/globalassets/global/privatefiber/index.html JavaScript error: https://www.unlimited.net.il/wp-content/themes/unlimited1620320223809	Marionette	INFO	Stopped listening on port 2119
+s.$.attr(...) is undefined
+1620320224620	Marionette	INFO	Stopped listening on port 2118
+! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3A0141,name=PContent::Msg_ScriptError) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+

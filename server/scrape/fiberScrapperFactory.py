@@ -56,3 +56,5 @@ partnerSuccessHeaderXpath = '//*[@id="AfibersSectionLead"]/div[2]/div/div[1]/h3/
 partnerSuccessHeader = 'יש! כבר הגענו לבניין שלך'
 
 
+
+
