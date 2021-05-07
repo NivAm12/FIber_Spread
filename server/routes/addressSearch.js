@@ -2,10 +2,9 @@ import { Router } from "express";
 const router = Router();
 import {AddressWithFibers, fiberAddressValidation,} from "../models/AddressWithFibers.js";
 import { spawnSync } from "child_process";
-import {existsSync} from "fs";
 import { fileURLToPath } from 'url';
 import {resolve, dirname} from "path";
-const __dirname = dirname(fileURLToPath(import.meta.url))
+const __dirname = dirname(fileURLToPath(import.meta.url));
 
 // addresses:
 router.get("/", async (req, res) => {
@@ -87,8 +86,3 @@ const saveAndCreateFiberAddress = async(cityName, streetName, houseNumber, compa
 
 
 export {router as addressSearch};
-
-// const city = "בת ים"
-// const street = "הרב מימון"
-// const num = 21
-// console.log(search(city, street, num));
