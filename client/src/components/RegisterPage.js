@@ -74,10 +74,10 @@ export default function RegisterPage() {
                 variant="outlined"
                 required
                 fullWidth
-                id="email"
-                label="Email Address"
-                name="email"
-                autoComplete="email"
+                id="userName"
+                label="User Name"
+                name="userName"
+                autoComplete="userName"
               />
             </Grid>
             <Grid item xs={12}>
