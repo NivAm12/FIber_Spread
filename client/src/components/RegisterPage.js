@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -9,6 +9,8 @@ import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
+import axios from "axios";
+import Alert from "@material-ui/lab/Alert";
 
 
 const useStyles = makeStyles((theme) => ({
@@ -34,6 +36,24 @@ const useStyles = makeStyles((theme) => ({
 export default function RegisterPage() {
   const classes = useStyles();
 
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  const [message, setMessage] = useState("");
+
+  const onRegister = async(event) =>{
+    event.preventDefault();
+
+    try{
+
+      // register to the server:
+      const response = await axios.post(`http://localhost:5000/register`, {username,password});
+
+      console.log(response.data);
+    }
+    catch(error){
+      setMessage(error.response.data.message);
+    }
+  }
   return (
     <Container component="main" maxWidth="xs">
       <CssBaseline />
@@ -44,31 +64,8 @@ export default function RegisterPage() {
         <Typography component="h1" variant="h5">
           Sign up
         </Typography>
-        <form className={classes.form} noValidate>
+        <form className={classes.form} onSubmit={onRegister} noValidate>
           <Grid container spacing={2}>
-            <Grid item xs={12} sm={6}>
-              <TextField
-                autoComplete="fname"
-                name="firstName"
-                variant="outlined"
-                required
-                fullWidth
-                id="firstName"
-                label="First Name"
-                autoFocus
-              />
-            </Grid>
-            <Grid item xs={12} sm={6}>
-              <TextField
-                variant="outlined"
-                required
-                fullWidth
-                id="lastName"
-                label="Last Name"
-                name="lastName"
-                autoComplete="lname"
-              />
-            </Grid>
             <Grid item xs={12}>
               <TextField
                 variant="outlined"
@@ -78,6 +75,8 @@ export default function RegisterPage() {
                 label="User Name"
                 name="userName"
                 autoComplete="userName"
+                value={username}
+                onChange={(event) => setUsername(event.target.value)}
               />
             </Grid>
             <Grid item xs={12}>
@@ -90,6 +89,8 @@ export default function RegisterPage() {
                 type="password"
                 id="password"
                 autoComplete="current-password"
+                value={password}
+                onChange={(event) => setPassword(event.target.value)}
               />
             </Grid>
           </Grid>

@@ -1,17 +1,18 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import TextField from '@material-ui/core/TextField';
-import FormControlLabel from '@material-ui/core/FormControlLabel';
-import Checkbox from '@material-ui/core/Checkbox';
+import Alert from '@material-ui/lab/Alert';
 import Link from '@material-ui/core/Link';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
-import fibersImg from '../images/fibers2.jpg'
+import fibersImg from '../images/fibers2.jpg';
+import axios from "axios";
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -45,8 +46,30 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function SignInSide() {
+export default function LoginPage() {
   const classes = useStyles();
+
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  const [message, setMessage] = useState("");
+
+  const onLogin = async (event) =>{
+    event.preventDefault();
+
+    try{
+      
+      // login to server:
+      const response = await axios.post(`http://localhost:5000/login`, {username, password});
+      console.log(response.data);
+
+    }
+    catch(error){
+      setMessage(error.response.data.message);
+    }
+    finally{
+      setPassword("");
+    }
+  }
 
   return (
     <Grid container component="main" className={classes.root}>
@@ -63,7 +86,8 @@ export default function SignInSide() {
           <Typography component="h1" variant="h5">
             Sign in
           </Typography>
-          <form className={classes.form} noValidate>
+          {message ? <Alert severity='error'>{message}</Alert> : null}
+          <form className={classes.form} onSubmit={onLogin} noValidate>
             <TextField
               variant="outlined"
               margin="normal"
@@ -74,6 +98,8 @@ export default function SignInSide() {
               name="userName"
               autoComplete="userName"
               autoFocus
+              value={username}
+              onChange={(event) => setUsername(event.target.value)}
             />
             <TextField
               variant="outlined"
@@ -85,6 +111,8 @@ export default function SignInSide() {
               type="password"
               id="password"
               autoComplete="current-password"
+              value={password}
+              onChange={(event) => setPassword(event.target.value)}
             />
             <Button
               type="submit"
