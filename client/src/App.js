@@ -4,8 +4,11 @@ import MainPage from "./components/MainPage";
 import React from "react";
 import axios from "axios";
 import {Router, Switch} from "react-router-dom";
+import useStyles from "../src/styles/App";
 
 function App() {
+
+  const classes = useStyles();
 
   const getUser = async() => {
     const response = await axios.get(`http://localhost:5000/user`);
@@ -14,8 +17,8 @@ function App() {
   }
 
   return (
-    <div className="App">
-      <LoginPage/>
+    <div className={classes.app}>
+      <MainPage/>
     </div>
   );
 }
