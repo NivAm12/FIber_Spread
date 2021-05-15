@@ -4,12 +4,12 @@ import {GoogleMap, useLoadScript, Marker, InfoWindow, Lat} from "@react-google-m
 
 const libraries = ["places"]
 const mapContainerStyle = {
-    witdh: "100wv",
-    height: "100vh"
+    width: "700px",
+    height: "500px",
 }
 const center = {
-    lat: 31.771959,
-    lng: 35.217018
+    lat: 31.243870,
+    lng: 34.793991
 }
 
 export default function Map() {
@@ -25,7 +25,7 @@ export default function Map() {
         <GoogleMap 
         mapContainerStyle={mapContainerStyle}
         zoom={8}
-        center={center}>
+        center={center}>  
         </GoogleMap>
     )
 }

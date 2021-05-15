@@ -1,31 +1,27 @@
-import React from 'react';
-import {GoogleMap, useLoadScript, Marker, InfoWindow, Lat} from "@react-google-maps/api"
-
-
-const libraries = ["places"]
-const mapContainerStyle = {
-    witdh: "100wv",
-    height: "100vh"
-}
-const center = {
-    lat: 31.771959,
-    lng: 35.217018
-}
+import React from "react";
+import Map from "./Map";
+import CardMedia from "@material-ui/core/CardMedia";
+import fiberImg from "../images/fiberSpreadImg.png";
+import Grid from "@material-ui/core/Grid";
+import useStyles from "../styles/MainPage";
 
 export default function MainPage() {
-    const {isLoaded, loadError} = useLoadScript({
-        googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAP_KEY,
-        libraries
-    });
+  const classes = useStyles();
 
-    if(loadError) return "Error loading maps";
-    if(!isLoaded) return "Loading maps"
-    
-    return(
-        <GoogleMap 
-        mapContainerStyle={mapContainerStyle}
-        zoom={8}
-        center={center}>
-        </GoogleMap>
-    )
+  return (
+    <div className={classes.root}>
+    <Grid container spacing={3}>
+      <Grid item xs={2} sm={12}>
+        <CardMedia
+          className={classes.cardMedia}
+          component="img"
+          image={fiberImg}
+        />
+      </Grid>
+      <Grid item xs={6} sm={6}>
+        <Map/>
+      </Grid>
+    </Grid>
+    </div>
+  );
 }

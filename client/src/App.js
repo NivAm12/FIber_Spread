@@ -15,7 +15,7 @@ function App() {
 
   return (
     <div className="App">
-      {async ()=>{await getUser() != null? <MainPage/> : <LoginPage/>}}
+      <LoginPage/>
     </div>
   );
 }
