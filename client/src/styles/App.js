@@ -3,9 +3,9 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
    app: {
-       height: "100%",
+       height: "100vh",
        display: "flex",
-       margin: theme.spacing(-1, -1, -1, -1)
+       margin: theme.spacing(-1, -0.4, -1, -1)
    }
   }));
 

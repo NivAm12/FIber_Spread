@@ -4,8 +4,8 @@ import mapStyles from "../styles/Map";
 
 const libraries = ["places"];
 const mapContainerStyle = {
-    width: "700px",
-    height: "500px",
+    width: "680px",
+    height: "450px",
 }
 const center = {
     lat: 31.046051,
