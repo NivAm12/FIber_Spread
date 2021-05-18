@@ -9,10 +9,9 @@ import useStyles from "../src/styles/App";
 function App() {
 
   const classes = useStyles();
-  let i = 1;
+
   const getUser = async() => {
     const response = await axios.get(`http://localhost:5000/user`);
-    console.log(i++);
     return response.data.user;
   }
 

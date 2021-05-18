@@ -23,6 +23,14 @@ const createDb = async () => {
   }
 };
 
+const updateDb = async () =>{
+  const db = connectToDb();
+  await db.collection("addresswithfibers").updateMany({},
+    {$set : {"location":null}},
+    {upsert:false,
+    multi:true})
+}
+
 
 const connectToDb = () => {
   connect("mongodb://localhost:27017/fiberSpread", {
@@ -37,6 +45,7 @@ const connectToDb = () => {
   db.once("open", () => {
     console.log("Database connected");
   });
+  return db;
 };
 
 
@@ -100,4 +109,4 @@ const checkAddressResult = async (address, companiesResult) => {
   }
 };
 
-createDb();
+updateDb();
