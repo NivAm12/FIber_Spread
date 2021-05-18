@@ -5,7 +5,6 @@ import {User} from "../models/user.js";
 
 //GET USER
 router.get("/user", (req, res) => {
-  console.log(req.user)
   res.send({ user: req.user });
 });
 

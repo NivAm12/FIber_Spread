@@ -2,13 +2,14 @@ import { makeStyles } from "@material-ui/core/styles";
 import sky from '../images/sky.jpg';
 
 
+
 const useStyles = makeStyles((theme) =>({
     root: {
       backgroundImage: `url(${sky})`,
       height: '100vh',
     },
     paper: {
-        backgroundColor: theme.palette.grey[50],
+        backgroundColor: theme.palette.grey[25],
         margin: theme.spacing(5, 5, 2, 4),
     },
     form: {
@@ -29,11 +30,15 @@ const useStyles = makeStyles((theme) =>({
       marginRight: "20px"
     },
     submit: {
+      '&:hover': {
+        backgroundColor: theme.palette.grey.A400
+      },
       margin: theme.spacing(3, 0, 2),
       backgroundColor: theme.palette.grey.A400
     },
     buttonGroup: {
-      marginLeft: "570px"
+      marginLeft: "575px",
+      backgroundColor: theme.palette.grey[300]
     }
   }));
 

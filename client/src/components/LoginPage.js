@@ -12,7 +12,7 @@ import Typography from '@material-ui/core/Typography';
 import axios from "axios";
 import useStyles from "../styles/LoginPage";
 
-export default function LoginPage() {
+export default function LoginPage(props) {
   const classes = useStyles();
 
   const [username, setUsername] = useState("");
@@ -25,9 +25,10 @@ export default function LoginPage() {
     try{
       
       // login to server:
-      const response = await axios.post(`http://localhost:5000/login`, {username, password});
-      console.log(response.data);
+      await axios.post(`http://localhost:5000/login`, {username, password});
 
+       // redirect to main page:
+       props.history.push('/');
     }
     catch(error){
       setMessage(error.response.data.message);
@@ -96,7 +97,7 @@ export default function LoginPage() {
                 </Link>
               </Grid>
               <Grid item>
-                <Link href="#" variant="body2">
+                <Link href="/register" variant="body2">
                   {"Don't have an account? Sign Up"}
                 </Link>
               </Grid>

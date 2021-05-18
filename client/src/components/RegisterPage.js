@@ -12,7 +12,7 @@ import axios from "axios";
 import Alert from "@material-ui/lab/Alert";
 import useStyles from "../styles/RegisterPage";
 
-export default function RegisterPage() {
+export default function RegisterPage(props) {
   const classes = useStyles();
 
   const [username, setUsername] = useState("");
@@ -25,9 +25,10 @@ export default function RegisterPage() {
     try{
 
       // register to the server:
-      const response = await axios.post(`http://localhost:5000/register`, {username,password});
+      await axios.post(`http://localhost:5000/register`, {username,password});
 
-      console.log(response.data);
+      // redirect to main page:
+      props.history.push('/');
     }
     catch(error){
       setMessage(error.response.data.message);
@@ -43,6 +44,7 @@ export default function RegisterPage() {
         <Typography component="h1" variant="h5">
           Sign up
         </Typography>
+        {message ? <Alert severity='error'>{message}</Alert> : null}
         <form className={classes.form} onSubmit={onRegister} noValidate>
           <Grid container spacing={2}>
             <Grid item xs={12}>
@@ -84,7 +86,7 @@ export default function RegisterPage() {
           </Button>
           <Grid container justify="flex-end">
             <Grid item>
-              <Link href="#" variant="body2">
+              <Link href="/login" variant="body2">
                 Already have an account? Sign in
               </Link>
             </Grid>
