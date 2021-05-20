@@ -5,15 +5,19 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "axios": "^0.21.1",
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
+    "dotenv": "^9.0.2",
     "express": "^4.17.1",
     "express-session": "^1.17.1",
     "joi": "^17.4.0",
     "mongoose": "^5.12.0",
+    "node-geocoder": "^3.27.0",
     "passport": "^0.4.1",
     "passport-local": "^1.0.0",
-    "passport-local-mongoose": "^6.1.0"
+    "passport-local-mongoose": "^6.1.0",
+    "react-geocode": "^0.2.3"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

@@ -1,5 +1,5 @@
 import mongoose from 'mongoose';
-import Joi from 'joi';
+import Joi  from 'joi';
 
 const {Schema, model} = mongoose;
 
@@ -16,6 +16,9 @@ const fiberAddressSchema = new Schema({
     },
     companies: {
         type: Array, "default": []
+    },
+    location: {
+        
     }
 });
 

@@ -3,6 +3,7 @@ import { FiberAddress } from "../models/FiberAddress.js";
 import { AddressWithFibers } from "../models/AddressWithFibers.js";
 import { spawnSync } from "child_process";
 const { connection, connect } = mongoose;
+import axios from "axios";
 
 
 const numberOfAddresses = 20;
@@ -24,11 +25,28 @@ const createDb = async () => {
 };
 
 const updateDb = async () =>{
-  const db = connectToDb();
-  await db.collection("addresswithfibers").updateMany({},
-    {$set : {"location":null}},
-    {upsert:false,
-    multi:true})
+  connectToDb();
+
+  const addresses = await AddressWithFibers.find();
+  for(const address of addresses){
+    let query = 'https://maps.googleapis.com/maps/api/geocode/json?address='  + 
+                  address.cityName + ' ' + address.streetName + ' ' + address.houseNumber +
+                  '&key=' + "";
+    query = decodeURI(query);
+    query = encodeURI(query);
+    
+    
+    let location = await axios.get(query);
+    
+    if(location.data.results[0]){
+      location = location.data.results[0].geometry.location;
+      await AddressWithFibers.findOneAndUpdate({
+        cityName: address.cityName,
+        streetName: address.streetName,
+        houseNumber: address.houseNumber
+      }, {location: location});
+    }
+  }
 }
 
 
