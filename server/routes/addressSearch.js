@@ -4,6 +4,7 @@ import {AddressWithFibers, fiberAddressValidation,} from "../models/AddressWithF
 import { spawnSync } from "child_process";
 import { fileURLToPath } from 'url';
 import {resolve, dirname} from "path";
+import axios from "axios";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 // addresses:
@@ -79,10 +80,26 @@ const checkAddressResult = async (companiesResult) => {
 };
 
 const saveAndCreateFiberAddress = async(cityName, streetName, houseNumber, companies) => {
-    const addressWithFibers = new AddressWithFibers({cityName, streetName, houseNumber, companies});
+    const location = await getCordsOfAddress(cityName, streetName, houseNumber)
+    const addressWithFibers = new AddressWithFibers({cityName, streetName, houseNumber, companies, location});
+
     await addressWithFibers.save();
     return addressWithFibers;
 }
 
+const getCordsOfAddress = async (cityName, streetName, houseNumber) => {
+  let query = 'https://maps.googleapis.com/maps/api/geocode/json?address='  + 
+                  cityName + ' ' + streetName + ' ' + houseNumber +
+                  '&key=' + "AIzaSyCl_bON_YOIXMcsvLd2Y-ftiKZuStSs_Bg";
+
+    query = decodeURI(query);
+    query = encodeURI(query);
+
+    let location = await axios.get(query);
+
+    location = location.data.results[0].geometry.location;
+
+    return location;
+}
 
 export {router as addressSearch};
