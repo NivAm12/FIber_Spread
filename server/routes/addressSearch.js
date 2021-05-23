@@ -20,13 +20,15 @@ router.get("/", async (req, res) => {
 
 router.post("/", async (req, res) => {
   try {
-    const { cityName, streetName, houseNumber } = req.body;
 
+    const { cityName, streetName, houseNumber } = req.body;
+    console.log(process.env.GOOGLE_API_KEY)
     // first search the DB:
     let fiberAddress = await AddressWithFibers.find({cityName, streetName, houseNumber,});
-    
+    fiberAddress = fiberAddress[0]
+
     // search for the address:
-    if (fiberAddress.length == 0) {
+    if (!fiberAddress) {
         // search:
         const fiberCompanies = await search(cityName, streetName, houseNumber);
 
@@ -90,7 +92,7 @@ const saveAndCreateFiberAddress = async(cityName, streetName, houseNumber, compa
 const getCordsOfAddress = async (cityName, streetName, houseNumber) => {
   let query = 'https://maps.googleapis.com/maps/api/geocode/json?address='  + 
                   cityName + ' ' + streetName + ' ' + houseNumber +
-                  '&key=' + "AIzaSyCl_bON_YOIXMcsvLd2Y-ftiKZuStSs_Bg";
+                  '&key=' + process.env.GOOGLE_API_KEY;
 
     query = decodeURI(query);
     query = encodeURI(query);

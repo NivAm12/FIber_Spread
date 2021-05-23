@@ -1,11 +1,11 @@
 import RegisterPage from "./RegisterPage";
 import LoginPage from "./LoginPage";
 import MainPage from "./MainPage";
-import React from "react";
+import React, {useState, useEffect} from "react";
 import axios from "axios";
 import { Switch, Route, Redirect } from 'react-router-dom';
-import useStyles from "../styles/App"
-import '../styles/App.css'
+import useStyles from "../styles/App";
+import '../styles/App.css';
 
 function App() {
 
@@ -20,7 +20,7 @@ function App() {
     <div className={classes.app}>
       <Switch>
         <Route exact path='/'
-          render={(props) => getUser() !== null 
+          render={(props) => getUser()
             ? <MainPage {...props} />
             : <Redirect to={{pathname: '/login', state: {from: props.location}}} />}
         />

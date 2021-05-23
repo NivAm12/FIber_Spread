@@ -266,3 +266,158 @@ selectedIndex
 unlimited/map/resources/ol.js, line 7: Failed to create WebGL context: WebGL creation failed: 
 * Can't use WebGL in headless mode (https://bugzil.la/1375585).
 1621781155175	Marionette	INFO	Stopped listening on port 11195
+1621806132038	geckodriver	INFO	Listening on 127.0.0.1:20538
+1621806135121	mozrunner::runner	INFO	Running command: "C:\\P1621806135163	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Us*** You are running in headless mode.
+1621806136373	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists,console.warn: SearchSettings: "get: No settings file1621806141153	Marionette	INFO	Listening on port 20563
+1621806141255	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.js1621806159141	Marionette	INFO	Stopped listening on port 20568
+ipt error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1621806167925	Marionette	INFO	Stopped listening on port 20563
+unlimited/map/resources/ol.js, line 7: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1621806173930	Marionette	INFO	Stopped listening on port 20562
+1621806191105	geckodriver	INFO	Listening on 127.0.0.1:20916
+1621806194164	mozrunner::runner	INFO	Running command: "C:\\P1621806194183	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Us*** You are running in headless mode.
+1621806195294	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1621806200115	Marionette	INFO	Listening on port 20938
+1621806200258	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1621806227371	Marionette	INFO	Stopped listening on port 20939
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+'t use WebGL in headless mode (https://bugzil.la/1375585).
+1621806232326	Marionette	INFO	Stopped listening on port 20938
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x230032,name=PBrowser::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+1621806244193	geckodriver	INFO	Listening on 127.0.0.1:21282
+1621806247217	mozrunner::runner	INFO	Running command: "C:\\P1621806247309	mozrunner::runner	INFO	Running command: "C:\\P1621806247372	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remot1621806248118	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists,console.warn: SearchSettings: "get: No settings file1621806252153	Marionette	INFO	Listening on port 21305
+1621806252584	Marionette	WARN	TLS certificate errors will be162181621806253020	MarionetJavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1621806280296	Marionette	INFO	Stopped listening on port 21305
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+ugzil.la/1375585).
+JavaScript error: https://www.unlimited.net.il/wp-content/themes/unlimited/map/resources/ol.js, line 7: Error: Unsupported GeoJSON type: undefined
+1621806282493	Marionette	INFO	Stopped listening on port 21309
+1621806285594	geckodriver	INFO	Listening on 127.0.0.1:21629
+1621806288647	mozrunner::runner	INFO	Running command: "C:\\P1621806288699	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Us*** You are running in headless mode.
+1621806289623	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists,console.warn: SearchSettings: "get: No settings file1621806294016	Marionette	INFO	Listening on port 21650
+1621806294343	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.js1621806310237	Marionette	INFO	Stopped listening on port 21658
+ipt error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1621806320899	Marionette	INFO	Stopped listening on port 21650
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3A0141,name=PContent::Msg_ScriptError) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0xB30006,name=PWe1621806326184	Marionette	INFO	Stopped listening on port 21654
+, messages will be lost
+
+1621806390833	geckodriver	INFO	Listening on 127.0.0.1:22032
+1621806393853	mozrunner::runner	INFO	Running command: "C:\\P1621806393945	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Us*** You are running in headless mode.
+1621806394898	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1621806398819	Marionette	INFO	Listening on port 22054
+162181621806399954	Marionette	INFO	Listening on port 22059
+1621806400486	Marionette	WAJavaScript error: resource://gre/actors/AutoCompleteChild.js1621806418325	Marionette	INFO	Stopped listening on port 22059
+ipt error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1621806426925	Marionette	INFO	Stopped listening on port 22054
+ipt warning: https://www.unlimited.net.il/wp-content/themes/unlimited/map/resources/ol.js, line 7: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1621806432543	Marionette	INFO	Stopped listening on port 22062
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x230032,name=PBrowser::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+1621806495897	geckodriver	INFO	Listening on 127.0.0.1:22441
+1621806498935	mozrunner::runner	INFO	Running command: "C:\\P1621806498999	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Us*** You are running in headless mode.
+1621806499851	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists,console.warn: SearchSettings: "get: No settings file1621806505263	Marionette	INFO	Listening on port 22463
+1621806505807	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.js1621806523679	Marionette	INFO	Stopped listening on port 22468
+ipt error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+Script warning: https://www.unlimited.net.il/wp-content/themes/unlimited/map/resources/ol.js, line 7: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1621806530944	geckodriver	INFO	Listening on 127.0.0.1:22800
+1621806533985	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\NIVAMO~1\\AppData\\Local\\Temp\\rust_mozprofileCK5YrW"
+*** You are running in headless mode.
+1621806535022	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1621806539509	Marionette	INFO	Listening on port 22826
+1621806539589	Marionette	WARN	TLS certificate errors will be ignored for this session
+1621806545182	geckodriver	INFO	Listening on 127.0.0.1:22952
+1621806548225	mozrunner::runner	INFO	Running command: "C:\\P1621806548310	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Us*** You are running in headless mode.
+1621806549582	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists,console.warn: SearchSettings: "get: No settings file1621806554532	Marionette	INFO	Listening on port 22974
+1621806555078	Marionette	WARN	TLS certificate errors will be1621806555167	Marionette	WAJavaScript error: resource://gre/actors/AutoCompleteChild.js1621806574379	Marionette	INFO	Stopped listening on port 22980
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!!1621806583476	Marionette	INFO	Stopped listening on port 22975
+ecv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+(https://bugzil.la/1375585).
+1621806589400	Marionette	INFO	Stopped listening on port 22974
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1621806713531	geckodriver	INFO	Listening on 127.0.0.1:23398
+1621806716578	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\NIVAMO~1\\AppData\\Local\\Temp\\rust_mozprofileciZH5o"
+*** You are running in headless mode.
+1621806717588	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1621806721778	Marionette	INFO	Listening on port 23420
+1621806722187	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1621806753127	Marionette	INFO	Stopped listening on port 23420
+unlimited/map/resources/ol.js, line 7: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript error: https://unpkg.com/axios/dist/axios.min.js, line 2: Error: Request aborted
+1621806743611	Marionette	INFO	Stopped listening on port 23418
+1621807015701	geckodriver	INFO	Listening on 127.0.0.1:23935
+1621807018707	mozrunner::runner	INFO	Running command: "C:\\P1621807018859	mozrunner::runner	INFO	Running command: "C:\\P1621807019065	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remot1621807020042	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists,console.warn: SearchSettings: "get: No settings file1621807024114	Marionette	INFO	Listening on port 23957
+162181621807025169	Marionette	INFO	Listening on port 23963
+162181621807025705	MarionetJavaScript warning: https://www.unlimited.net.il/wp-content/JavaScript error: resource://gre/actors/AutoCompleteChild.js1621807043710	Marionette	INFO	Stopped listening on port 23970
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!!1621807053488	Marionette	INFO	Stopped listening on port 23963
+ecv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/r1621807057597	Marionette	INFO	Stopped listening on port 23957
+1621807180418	geckodriver	INFO	Listening on 127.0.0.1:24361
+1621807183466	mozrunner::runner	INFO	Running command: "C:\\P1621807183528	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Us*** You are running in headless mode.
+1621807184432	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1621807188804	Marionette	INFO	Listening on port 24383
+1621807189050	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.js1621807206352	Marionette	INFO	Stopped listening on port 24391
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!!1621807216149	Marionette	INFO	Stopped listening on port 24383
+ecv, messages will be lost
+
+ited.net.il/wp-content/themes/unlimited/map/resources/ol.js, line 7: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript error: https://www.unlimited.net.il/wp-content/themes/unlimited/assets/dist/js/bundle.js?ver=20210404, line 7: TypeError: this.$.attr(...) is undefined
+1621807214663	Marionette	INFO	Stopped listening on port 24387

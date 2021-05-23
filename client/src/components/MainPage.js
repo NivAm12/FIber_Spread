@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import Map from "./Map";
 import CardMedia from "@material-ui/core/CardMedia";
 import fiberImg from "../images/fiberSpreadImg.png";
@@ -13,23 +13,46 @@ import axios from "axios";
 
 
 export default function MainPage(props) {
+  // DATA:
+  const [cityName, setCityName] = useState("");
+  const [streetName, setstreetName] = useState("");
+  const [houseNumber, setHouseNumber] = useState("");
+
+  // STYLE:
   const classes = useStyles();
 
-  const onLogout = async (event) => {
+
+  // METHODS:
+  const handleLogout = async (event) => {
     //prevent refresh
     event.preventDefault();
 
     try {
       // logout from server:
-      await axios.get(`http://localhost:5000/logout`);
+      await axios.get('http://localhost:5000/logout');
     } finally {
       //redirect to login page
       props.history.push("/login");
     }
   };
 
+  const handleSearch = async (event) => {
+    event.preventDefault();
+
+    try{
+      // search the address:
+      const response = await axios.post('http://localhost:5000/search', {cityName, streetName, houseNumber});
+      console.log(response.data.data);
+    }
+    catch(err){
+      console.log(err);
+    }
+  }
+
+  
+
   return (
-    <div className={classes.root}>
+    <div className={classes.rootresponse}>
       <Paper className={classes.paper}>
         <Grid container spacing={1} direction="coulmn">
           <Grid container spacing={3}>
@@ -46,7 +69,7 @@ export default function MainPage(props) {
                 color="default"
                 className={classes.logoutBtn}
                 startIcon={<ExitToAppIcon />}
-                onClick={onLogout}
+                onClick={handleLogout}
               >
                 Logout
               </Button>
@@ -67,7 +90,7 @@ export default function MainPage(props) {
           <Grid container spacing={5}>
             <Grid item xs={1} />
             <Grid item xs={2}>
-              <form className={classes.form} noValidate>
+              <form className={classes.form} onSubmit={handleSearch} noValidate>
                 <TextField
                   variant="outlined"
                   margin="normal"
@@ -77,6 +100,8 @@ export default function MainPage(props) {
                   label="City"
                   name="city"
                   autoFocus
+                  value={cityName}
+                  onChange={(event) => setCityName(event.target.value)}
                 />
                 <TextField
                   variant="outlined"
@@ -87,6 +112,8 @@ export default function MainPage(props) {
                   label="Street"
                   name="street"
                   autoFocus
+                  value={streetName}
+                  onChange={(event) => setstreetName(event.target.value)}
                 />
                 <TextField
                   variant="outlined"
@@ -96,13 +123,14 @@ export default function MainPage(props) {
                   name="housernumber"
                   label="House number"
                   id="housernumber"
+                  value={houseNumber}
+                  onChange={(event) => setHouseNumber(event.target.value)}
                 />
                 <Button
                   type="submit"
                   fullWidth
                   variant="contained"
                   color="primary"
-                  disableElevation={true}
                   className={classes.submit}
                 >
                   Search

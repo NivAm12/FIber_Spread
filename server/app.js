@@ -8,6 +8,8 @@ import passport from "passport";
 import session from "express-session";
 import localStrategy from "passport-local"
 const {connect, connection} = mongoose;
+import { config} from "dotenv";
+
 
 // DB CONNECTION
 const connectToDb = () => {
@@ -29,6 +31,7 @@ const connectToDb = () => {
 // set the app:
 const app = express();
 connectToDb();
+config()
 const port = process.env.PORT || 5000;
 app.listen(port, () => {
   console.log(`Server Running at ${port}`);
