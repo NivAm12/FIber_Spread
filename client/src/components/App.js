@@ -1,10 +1,11 @@
-import RegisterPage from "./components/RegisterPage";
-import LoginPage from "./components/LoginPage";
-import MainPage from "./components/MainPage";
+import RegisterPage from "./RegisterPage";
+import LoginPage from "./LoginPage";
+import MainPage from "./MainPage";
 import React from "react";
 import axios from "axios";
 import { Switch, Route, Redirect } from 'react-router-dom';
-import useStyles from "../src/styles/App";
+import useStyles from "../styles/App"
+import '../styles/App.css'
 
 function App() {
 
@@ -16,7 +17,7 @@ function App() {
   }
 
   return (
-    <div>
+    <div className={classes.app}>
       <Switch>
         <Route exact path='/'
           render={(props) => getUser() !== null 

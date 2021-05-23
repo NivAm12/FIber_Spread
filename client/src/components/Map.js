@@ -7,8 +7,8 @@ import Geocode from "react-geocode";
 
 const libraries = ["places"];
 const mapContainerStyle = {
-    width: "680px",
-    height: "450px",
+    width: "600px",
+    height: "400px",
 }
 const center = {
     lat: 31.046051,

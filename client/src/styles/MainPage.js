@@ -2,23 +2,27 @@ import { makeStyles } from "@material-ui/core/styles";
 import sky from '../images/sky.jpg';
 
 
-
 const useStyles = makeStyles((theme) =>({
     root: {
       backgroundImage: `url(${sky})`,
-      height: '100vh',
+      height: '100%',
+      padding: theme.spacing(3, 3, 0, 3),
+      marginTop: '-15px',
+
+      
     },
     paper: {
         backgroundColor: theme.palette.grey[25],
-        margin: theme.spacing(5, 5, 2, 4),
+        height: '90%',
+        width: '100%',
+        //background: 'linear-gradient(150deg, #00416A 10%, #E4E5E6 50%)',
     },
     form: {
-      width: '100%', // Fix IE 11 issue.
+      width: '100%', 
       marginTop: theme.spacing(-2),
     },
     cardMedia: {
-      maxWidth: 195,
-      height: 140,
+      maxWidth: "20%",
       float: "left",
       marginRight: "10px",
       marginBottom: "15px",

@@ -31,7 +31,7 @@ export default function MainPage(props) {
   return (
     <div className={classes.root}>
       <Paper className={classes.paper}>
-        <Grid container spacing={2} direction="coulmn">
+        <Grid container spacing={1} direction="coulmn">
           <Grid container spacing={3}>
             <Grid item xs={10}>
               <CardMedia
@@ -64,7 +64,7 @@ export default function MainPage(props) {
               <Button>Unlimited</Button>
             </ButtonGroup>
           </Grid>
-          <Grid container spacing={4}>
+          <Grid container spacing={5}>
             <Grid item xs={1} />
             <Grid item xs={2}>
               <form className={classes.form} noValidate>
@@ -109,11 +109,11 @@ export default function MainPage(props) {
                 </Button>
               </form>
             </Grid>
-            <Grid item>
-              <Map />
+            <Grid item xs={1}>
+              <Map/>
             </Grid>
           </Grid>
-          <Grid item sm={1} />
+          <Grid item xs={1} />
         </Grid>
       </Paper>
     </div>

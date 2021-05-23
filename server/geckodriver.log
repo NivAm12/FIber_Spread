@@ -250,3 +250,19 @@ unlimited/map/resources/ol.js, line 7: Failed to create WebGL context: WebGL cre
 
 ###!!! [Child][MessageChannel] Error: (msgtype=0x230032,name=PBrowser::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
 
+1621781123693	geckodriver	INFO	Listening on 127.0.0.1:11173
+1621781126783	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\NIVAMO~1\\AppData\\Local\\Temp\\rust_mozprofileQhtHbY"
+*** You are running in headless mode.
+1621781127647	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1621781130777	Marionette	INFO	Listening on port 11193
+1621781131033	Marionette	WARN	TLS certificate errors will be ignored for this session
+1621781148237	Marionette	INFO	Stopped listening on port 11194
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x230032,name=PBrowser::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+selectedIndex
+1621781156819	Marionette	INFO	Stopped listening on port 11193
+unlimited/map/resources/ol.js, line 7: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1621781155175	Marionette	INFO	Stopped listening on port 11195
