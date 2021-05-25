@@ -52,7 +52,7 @@ export default function MainPage(props) {
   
 
   return (
-    <div className={classes.rootresponse}>
+    <div className={classes.root}>
       <Paper className={classes.paper}>
         <Grid container spacing={1} direction="coulmn">
           <Grid container spacing={3}>
@@ -89,7 +89,7 @@ export default function MainPage(props) {
           </Grid>
           <Grid container spacing={5}>
             <Grid item xs={1} />
-            <Grid item xs={2}>
+            <Grid item xs={3}>
               <form className={classes.form} onSubmit={handleSearch} noValidate>
                 <TextField
                   variant="outlined"

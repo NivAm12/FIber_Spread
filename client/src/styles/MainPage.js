@@ -6,20 +6,21 @@ const useStyles = makeStyles((theme) =>({
     root: {
       backgroundImage: `url(${sky})`,
       height: '100%',
-      padding: theme.spacing(3, 3, 0, 3),
+      padding: theme.spacing(1, 1, 1, 1),
       marginTop: '-15px',
-
-      
+      position: 'fixed',
+      left: 0
     },
     paper: {
         backgroundColor: theme.palette.grey[25],
         height: '90%',
-        width: '100%',
+        width: '90%',
+        margin: theme.spacing(4, 0, 0, 9)
         //background: 'linear-gradient(150deg, #00416A 10%, #E4E5E6 50%)',
     },
     form: {
       width: '100%', 
-      marginTop: theme.spacing(-2),
+      margin: theme.spacing(-2, 0, 0, 0),
     },
     cardMedia: {
       maxWidth: "20%",
@@ -41,7 +42,7 @@ const useStyles = makeStyles((theme) =>({
       backgroundColor: theme.palette.grey.A400
     },
     buttonGroup: {
-      marginLeft: "575px",
+      marginLeft: "690px",
       backgroundColor: theme.palette.grey[300]
     }
   }));
