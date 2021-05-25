@@ -17,12 +17,26 @@ export default function MainPage(props) {
   const [cityName, setCityName] = useState("");
   const [streetName, setstreetName] = useState("");
   const [houseNumber, setHouseNumber] = useState("");
+  const [addresses, setAddresses] = useState("");
 
   // STYLE:
   const classes = useStyles();
 
 
   // METHODS:
+
+  useEffect(async() => {
+    try{
+      console.log("in use effect")
+      const {data} = await axios.get('http://localhost:5000/search');
+      setAddresses(data.data);
+    }
+    catch(err){
+
+    }
+
+  },[])
+
   const handleLogout = async (event) => {
     //prevent refresh
     event.preventDefault();
@@ -138,7 +152,7 @@ export default function MainPage(props) {
               </form>
             </Grid>
             <Grid item xs={1}>
-              <Map/>
+              <Map markers={addresses}/>
             </Grid>
           </Grid>
           <Grid item xs={1} />

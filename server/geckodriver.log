@@ -421,3 +421,14 @@ ited.net.il/wp-content/themes/unlimited/map/resources/ol.js, line 7: Failed to c
 * Can't use WebGL in headless mode (https://bugzil.la/1375585).
 JavaScript error: https://www.unlimited.net.il/wp-content/themes/unlimited/assets/dist/js/bundle.js?ver=20210404, line 7: TypeError: this.$.attr(...) is undefined
 1621807214663	Marionette	INFO	Stopped listening on port 24387
+1621968549288	geckodriver	INFO	Listening on 127.0.0.1:31087
+1621968552348	mozrunner::runner	INFO	Running command: "C:\\P1621968552390	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Us*** You are running in headless mode.
+1621968553505	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1621968558203	Marionette	INFO	Listening on port 31111
+1621968558540	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChi1621968572309	Marionette	INFO	Stopped listening on port 311161621968583040	Marionette	INFO	Stopped listening on port 31110
+unlimited/map/resources/ol.js, line 7: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1621968589905	Marionette	INFO	Stopped listening on port 31111

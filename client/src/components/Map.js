@@ -1,7 +1,6 @@
 import React from 'react';
 import {GoogleMap, useLoadScript, Marker, InfoWindow} from "@react-google-maps/api"
 import mapStyles from "../styles/Map";
-import axios from "axios";
 import Geocode from "react-geocode";
 
 
@@ -22,18 +21,24 @@ Geocode.setApiKey(process.env.REACT_APP_GOOGLE_MAP_KEY);
 Geocode.setLanguage('il');
 
 
-export default function Map() {
+export default function Map(props) {
     
     const {isLoaded, loadError} = useLoadScript({
         googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAP_KEY,
         libraries
     });
 
-    const search = async () =>{
+    const createMarkers = () =>{
+        let markers = null;
+        
+        if(Array.isArray(props.markers)){
+            markers = props.markers.map((marker) => {
+                return <Marker
+                position={marker.location}/>
+            })
+        }
 
-        const res = await Geocode.fromAddress('רבי מימון 20 בת ים');
-        console.log(res.results[0]);
-
+        return markers;
     }
 
     if(loadError) return "Error loading maps";
@@ -44,8 +49,8 @@ export default function Map() {
         options={options}
         mapContainerStyle={mapContainerStyle}
         zoom={8}
-        onClick={search}
-        center={center}> 
+        center={center}>
+            {createMarkers()}
         </GoogleMap>
     )
 }

@@ -4,12 +4,13 @@ import sky from '../images/sky.jpg';
 
 const useStyles = makeStyles((theme) =>({
     root: {
-      backgroundImage: `url(${sky})`,
+      //backgroundImage: `url(${sky})`,
       height: '100%',
       padding: theme.spacing(1, 1, 1, 1),
       marginTop: '-15px',
       position: 'fixed',
-      left: 0
+      left: 0,
+      background: 'linear-gradient(150deg, #007991 30%, #78ffd6 50%)',
     },
     paper: {
         backgroundColor: theme.palette.grey[25],
@@ -42,7 +43,7 @@ const useStyles = makeStyles((theme) =>({
       backgroundColor: theme.palette.grey.A400
     },
     buttonGroup: {
-      marginLeft: "690px",
+      marginLeft: theme.spacing(80),
       backgroundColor: theme.palette.grey[300]
     }
   }));
