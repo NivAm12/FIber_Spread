@@ -27,12 +27,11 @@ export default function MainPage(props) {
 
   useEffect(async() => {
     try{
-      console.log("in use effect")
       const {data} = await axios.get('http://localhost:5000/search');
       setAddresses(data.data);
     }
     catch(err){
-
+      console.error(err);
     }
 
   },[])
@@ -63,8 +62,7 @@ export default function MainPage(props) {
     }
   }
 
-  
-
+  // RENDER
   return (
     <div className={classes.root}>
       <Paper className={classes.paper}>

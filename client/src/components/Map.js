@@ -2,6 +2,7 @@ import React from 'react';
 import {GoogleMap, useLoadScript, Marker, InfoWindow} from "@react-google-maps/api"
 import mapStyles from "../styles/Map";
 import Geocode from "react-geocode";
+import fibersIcon from "../icons/fibersIcon2.svg";
 
 
 const libraries = ["places"];
@@ -34,7 +35,15 @@ export default function Map(props) {
         if(Array.isArray(props.markers)){
             markers = props.markers.map((marker) => {
                 return <Marker
-                position={marker.location}/>
+                position={marker.location}
+                icon={{
+                    url: fibersIcon,
+                    scaledSize: new window.google.maps.Size(30, 30),
+                    origin: new window.google.maps.Point(0, 0),
+                    anchor: new window.google.maps.Point(15, 15)
+
+                }}
+                />
             })
         }
 
@@ -48,9 +57,9 @@ export default function Map(props) {
         <GoogleMap 
         options={options}
         mapContainerStyle={mapContainerStyle}
-        zoom={8}
+        zoom={7}
         center={center}>
-            {createMarkers()}
+        {createMarkers()}
         </GoogleMap>
     )
 }
