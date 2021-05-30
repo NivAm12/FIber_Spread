@@ -22,18 +22,16 @@ export default function MainPage(props) {
     zoom: 7,
     center: {lat: 31.046051, lng: 34.851612}
 });
+  const [companyFilter, setCompanyFilter] = useState("all");
 
   // STYLE:
   const classes = useStyles();
 
-
   // METHODS:
-
   useEffect(async() => {
     try{
       const {data} = await axios.get('http://localhost:5000/search');
       setAddresses(data.data);
-      console.log("in use effect")
     }
     catch(err){
       console.error(err);
@@ -60,7 +58,6 @@ export default function MainPage(props) {
     try{
       // search the address:
       const response = await axios.post('http://localhost:5000/search', {cityName, streetName, houseNumber});
-      console.log(response.data.data);
       setMapZoom({zoom: 20, center: response.data.data.location})
     }
     catch(err){
@@ -100,9 +97,10 @@ export default function MainPage(props) {
               className={classes.buttonGroup}
               variant="outlined"
             >
-              <Button>Partner</Button>
-              <Button>Cellcom</Button>
-              <Button>Unlimited</Button>
+              <Button onClick={()=> setCompanyFilter("partner")}>Partner</Button>
+              <Button onClick={()=>setCompanyFilter("cellcom")}>Cellcom</Button>
+              <Button onClick={()=>setCompanyFilter("unlimited")}>Unlimited</Button>
+              <Button onClick={()=>setCompanyFilter("all")}>All</Button>
             </ButtonGroup>
           </Grid>
           <Grid container spacing={5}>
@@ -141,6 +139,7 @@ export default function MainPage(props) {
                   name="housernumber"
                   label="House number"
                   id="housernumber"
+                  autoFocus
                   value={houseNumber}
                   onChange={(event) => setHouseNumber(event.target.value)}
                 />
@@ -159,6 +158,7 @@ export default function MainPage(props) {
               <Map
               markers={addresses}
               options={mapZoom}
+              filter={companyFilter}
               />
             </Grid>
           </Grid>

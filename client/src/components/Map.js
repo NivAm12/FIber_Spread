@@ -40,12 +40,16 @@ export default function Map(props) {
         onCloseClick={() => setMarkerSelected(null)}
       >
         <div>
-            <h3>
-                {`Address: ${markerSelected.cityName + ',' + markerSelected.streetName + ',' + markerSelected.houseNumber}`}
-            </h3>
-            <h3>
-                {`Network companies: ${markerSelected.companies}`}
-            </h3>
+          <h3>
+            {`Address: ${
+              markerSelected.cityName +
+              "," +
+              markerSelected.streetName +
+              "," +
+              markerSelected.houseNumber
+            }`}
+          </h3>
+          <h3>{`Network companies: ${markerSelected.companies}`}</h3>
         </div>
       </InfoWindow>
     );
@@ -56,19 +60,21 @@ export default function Map(props) {
 
     if (Array.isArray(props.markers)) {
       markers = props.markers.map((marker) => {
-        return (
-          <Marker
-            position={marker.location}
-            onClick={() => setMarkerSelected(marker)}
-            // icon={{
-            //     url: fibersIcon,
-            //     scaledSize: new window.google.maps.Size(30, 30),
-            //     origin: new window.google.maps.Point(0, 0),
-            //     anchor: new window.google.maps.Point(15, 15)
+        if (marker.companies.includes(props.filter) || props.filter == "all") {
+          return (
+            <Marker
+              position={marker.location}
+              onClick={() => setMarkerSelected(marker)}
+              // icon={{
+              //     url: fibersIcon,
+              //     scaledSize: new window.google.maps.Size(30, 30),
+              //     origin: new window.google.maps.Point(0, 0),
+              //     anchor: new window.google.maps.Point(15, 15)
 
-            // }}
-          />
-        );
+              // }}
+            />
+          );
+        }
       });
     }
 
