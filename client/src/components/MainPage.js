@@ -18,6 +18,10 @@ export default function MainPage(props) {
   const [streetName, setstreetName] = useState("");
   const [houseNumber, setHouseNumber] = useState("");
   const [addresses, setAddresses] = useState("");
+  const [mapZoom, setMapZoom] = useState({
+    zoom: 7,
+    center: {lat: 31.046051, lng: 34.851612}
+});
 
   // STYLE:
   const classes = useStyles();
@@ -29,12 +33,13 @@ export default function MainPage(props) {
     try{
       const {data} = await axios.get('http://localhost:5000/search');
       setAddresses(data.data);
+      console.log("in use effect")
     }
     catch(err){
       console.error(err);
     }
 
-  },[])
+  },[mapZoom])
 
   const handleLogout = async (event) => {
     //prevent refresh
@@ -56,6 +61,7 @@ export default function MainPage(props) {
       // search the address:
       const response = await axios.post('http://localhost:5000/search', {cityName, streetName, houseNumber});
       console.log(response.data.data);
+      setMapZoom({zoom: 20, center: response.data.data.location})
     }
     catch(err){
       console.log(err);
@@ -150,7 +156,10 @@ export default function MainPage(props) {
               </form>
             </Grid>
             <Grid item xs={1}>
-              <Map markers={addresses}/>
+              <Map
+              markers={addresses}
+              options={mapZoom}
+              />
             </Grid>
           </Grid>
           <Grid item xs={1} />

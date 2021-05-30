@@ -559,3 +559,71 @@ JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: 
 
 cket::Msg_DeleteSelf) Channel closing: too late to send/recv, messages will be lost
 
+1622369023034	geckodriver	INFO	Listening on 127.0.0.1:28235
+1622369026145	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\NIVAMO~1\\AppData\\Local\\Temp\\rust_mozprofileJmAs9l"
+*** You are running in headless mode.
+1622369027166	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1622369030721	Marionette	INFO	Listening on port 4830
+1622369031247	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1622369075293	Marionette	INFO	Stopped listening on port 4830
+/unlimited/map/resources/ol.js, line 7: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript error: https://www.unlimited.net.il/wp-content/themes/unlimited/assets/dist/js/bundle.js?ver=20210404, line 7: TypeError: this.$.attr(...) is undefined
+1622369057074	Marionette	INFO	Stopped listening on port 4831
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x230032,name=PBrowser::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+1622369219221	geckodriver	INFO	Listening on 127.0.0.1:4385
+1622369222284	mozrunner::runner	INFO	Running command: "C:\\1622369222295	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Use*** You are running in headless mode.
+1622369223036	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1622369226234	Marionette	INFO	Listening on port 1055
+1622369226573	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.j1622369245507	Marionette	INFO	Stopped listening on port 1059
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+tedIndex
+1622369250027	Marionette	INFO	Stopped listening on port 1052
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+n't use WebGL in headless mode (https://bugzil.la/1375585).
+1622369252658	Marionette	INFO	Stopped listening on port 1055
+JavaScript error: https://www.unlimited.net.il/wp-content/themes/unlimited/assets/dist/js/bundle.js?ver=20210404, line 7: TypeError: this.$.attr(...) is undefined
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-WH492V, line 1363: NS_ERROR_NOT_INITIALIZED: 
+1622372103042	geckodriver	INFO	Listening on 127.0.0.1:5069
+1622372106104	mozrunner::runner	INFO	Running command: "C:\\1622372106160	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Use*** You are running in headless mode.
+1622372106945	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file existsconsole.warn: SearchSettings: "get: No settings file 1622372110067	Marionette	INFO	Listening on port 1055
+162231622372110806	Marionette	INFO	Listening on port 1066
+1622372111128	Marionette	WARJavaScript error: resource://gre/actors/AutoCompleteChild.j1622372128033	Marionette	INFO	Stopped listening on port 1062
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+tedIndex
+1622372136753	Marionette	INFO	Stopped listening on port 1055
+
+###!!! [Child][MessageChannel] Error: (msgtype=0xB30006,name=PWebSocket::Msg_DeleteSelf) Channel closing: too late to send/recv, messages will be lost
+
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript error: https://www.unlimited.net.il/wp-content/themes/unlimited/assets/dist/js/bundle.js?ver=20210404, line 7: TypeError: this.$.attr(...) is undefined
+1622372137131	Marionette	INFO	Stopped listening on port 1066
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x5B0004,name=PHttpChannel::Msg_Cancel) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x5B0009,name=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+
