@@ -22,7 +22,7 @@ router.post("/", async (req, res) => {
   try {
 
     const { cityName, streetName, houseNumber } = req.body;
-    console.log(process.env.GOOGLE_API_KEY)
+
     // first search the DB:
     let fiberAddress = await AddressWithFibers.find({cityName, streetName, houseNumber,});
     fiberAddress = fiberAddress[0]

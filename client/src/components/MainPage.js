@@ -8,6 +8,7 @@ import Paper from "@material-ui/core/Paper";
 import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
 import ExitToAppIcon from "@material-ui/icons/ExitToApp";
+import Alert from "@material-ui/lab/Alert"
 import { ButtonGroup } from "@material-ui/core";
 import axios from "axios";
 
@@ -18,11 +19,12 @@ export default function MainPage(props) {
   const [streetName, setstreetName] = useState("");
   const [houseNumber, setHouseNumber] = useState("");
   const [addresses, setAddresses] = useState("");
+  const [companyFilter, setCompanyFilter] = useState("all");
+  const [alert, setAlert] = useState(false);
   const [mapZoom, setMapZoom] = useState({
     zoom: 7,
     center: {lat: 31.046051, lng: 34.851612}
 });
-  const [companyFilter, setCompanyFilter] = useState("all");
 
   // STYLE:
   const classes = useStyles();
@@ -58,10 +60,18 @@ export default function MainPage(props) {
     try{
       // search the address:
       const response = await axios.post('http://localhost:5000/search', {cityName, streetName, houseNumber});
-      setMapZoom({zoom: 20, center: response.data.data.location})
+      
+      if(response.data.data != null){
+        setMapZoom({zoom: 20, center: response.data.data.location});
+        setAlert(false);
+      }
+      else{
+        setAlert(true);
+      }
     }
     catch(err){
       console.log(err);
+      setAlert(true);
     }
   }
 
@@ -107,6 +117,7 @@ export default function MainPage(props) {
             <Grid item xs={1} />
             <Grid item xs={3}>
               <form className={classes.form} onSubmit={handleSearch} noValidate>
+              {alert? <Alert severity="error">Could not find any fibers on this address</Alert>: null}
                 <TextField
                   variant="outlined"
                   margin="normal"

@@ -60,7 +60,7 @@ export default function Map(props) {
 
     if (Array.isArray(props.markers)) {
       markers = props.markers.map((marker) => {
-        if (marker.companies.includes(props.filter) || props.filter == "all") {
+        if (marker.companies.includes(props.filter) || props.filter === "all") {
           return (
             <Marker
               position={marker.location}
@@ -75,6 +75,7 @@ export default function Map(props) {
             />
           );
         }
+        else return null;
       });
     }
 

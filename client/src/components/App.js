@@ -1,7 +1,7 @@
 import RegisterPage from "./RegisterPage";
 import LoginPage from "./LoginPage";
 import MainPage from "./MainPage";
-import React, {useState, useEffect} from "react";
+import React from "react";
 import axios from "axios";
 import { Switch, Route, Redirect } from 'react-router-dom';
 import useStyles from "../styles/App";

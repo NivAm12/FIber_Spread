@@ -627,3 +627,79 @@ JavaScript error: https://www.unlimited.net.il/wp-content/themes/unlimited/asset
 
 ###!!! [Child][MessageChannel] Error: (msgtype=0x5B0009,name=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
 
+1622393727099	geckodriver	INFO	Listening on 127.0.0.1:1036
+1622393730179	mozrunner::runner	INFO	Running command: "C:\\1622393730184	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Use*** You are running in headless mode.
+1622393731314	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1622393735746	Marionette	INFO	Listening on port 16442
+1622393736200	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.j1622393755975	Marionette	INFO	Stopped listening on port 16446
+ript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1622393756653	Marionette	INFO	Stopped listening on port 16443
+unlimited/map/resources/ol.js, line 7: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript error: https://www.unlimited.net.il/wp-content/themes/unlimited/assets/dist/js/bundle.js?ver=20210404, line 7: TypeError: this.$.attr(...) is undefined
+1622393765496	Marionette	INFO	Stopped listening on port 16442
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x230032,name=PBrowser::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+1622393825836	geckodriver	INFO	Listening on 127.0.0.1:6561
+1622393828874	mozrunner::runner	INFO	Running command: "C:\\1622393828978	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Use*** You are running in headless mode.
+1622393829812	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file existsconsole.warn: SearchSettings: "get: No settings file 1622393833775	Marionette	INFO	Listening on port 1032
+1622393834356	Marionette	WARN	TLS certificate errors will b1622393834479	Marionette	WARJavaScript error: resource://gre/actors/AutoCompleteChild.j1622393861839	Marionette	INFO	Stopped listening on port 1057
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+tedIndex
+1622393861607	Marionette	INFO	Stopped listening on port 1032
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+iled to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1622393858111	Marionette	INFO	Stopped listening on port 1052
+1622393898044	geckodriver	INFO	Listening on 127.0.0.1:20224
+1622393901109	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\NIVAMO~1\\AppData\\Local\\Temp\\rust_mozprofileNh8Pke"
+*** You are running in headless mode.
+1622393902379	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1622393906434	Marionette	INFO	Listening on port 1061
+1622393906668	Marionette	WARN	TLS certificate errors will be ignored for this session
+1622393934425	Marionette	INFO	Stopped listening on port 1061
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+opped listening on port 1062
+/unlimited/map/resources/ol.js, line 7: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1622393928968	Marionette	INFO	Stopped listening on port 1063
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x230032,name=PBrowser::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+1622394244131	geckodriver	INFO	Listening on 127.0.0.1:5511
+1622394247192	mozrunner::runner	INFO	Running command: "C:\\1622394247217	mozrunner::runner	INFO	Running command: "C:\\1622394247233	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette"*** You are running in headless mode.
+1622394248204	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1622394252036	Marionette	INFO	Listening on port 5531
+1622394252738	Marionette	WARN	TLS certificate errors will b1622394253035	Marionette	WARJavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+Ja1622394267623	Marionette	INFO	Stopped listening on port 5538
+
+###!!! [Child][RunMessage] Error: Channel closing:1622394279391	Marionette	INFO	Stopped listening on port 5531
+ld][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+s, line 7: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1622394275994	Marionette	INFO	Stopped listening on port 5535
