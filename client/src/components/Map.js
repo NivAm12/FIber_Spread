@@ -7,12 +7,13 @@ import {
 } from "@react-google-maps/api";
 import mapStyles from "../styles/Map";
 import Geocode from "react-geocode";
-import fibersIcon from "../icons/fibersIcon2.svg";
+import fiberIcon from "../icons/fiberIcon.svg";
+
 
 const libraries = ["places"];
 const mapContainerStyle = {
-  width: "600px",
-  height: "400px",
+  width: "880px",
+  height: "450px",
 };
 // const center = {
 //     lat: 31.046051,
@@ -66,11 +67,10 @@ export default function Map(props) {
               position={marker.location}
               onClick={() => setMarkerSelected(marker)}
               // icon={{
-              //     url: fibersIcon,
+              //     url: fiberIcon,
               //     scaledSize: new window.google.maps.Size(30, 30),
               //     origin: new window.google.maps.Point(0, 0),
               //     anchor: new window.google.maps.Point(15, 15)
-
               // }}
             />
           );

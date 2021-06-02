@@ -43,7 +43,7 @@ const useStyles = makeStyles((theme) =>({
       backgroundColor: theme.palette.grey.A400
     },
     buttonGroup: {
-      marginLeft: theme.spacing(80),
+      margin: theme.spacing(-10, 0, 1, 90),
       backgroundColor: theme.palette.grey[300]
     }
   }));

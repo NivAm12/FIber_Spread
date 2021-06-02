@@ -79,7 +79,7 @@ export default function MainPage(props) {
   return (
     <div className={classes.root}>
       <Paper className={classes.paper}>
-        <Grid container spacing={1} direction="coulmn">
+        <Grid container spacing={0} direction="coulmn">
           <Grid container spacing={3}>
             <Grid item xs={10}>
               <CardMedia
